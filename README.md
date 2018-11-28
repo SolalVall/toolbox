@@ -14,16 +14,17 @@ Each version of Toolbox has a specific tagged branch (and after each new toolbok
 ### Available versions
 
 * v0.0.1: Install Ansible 2.7 (with Python and other necessary packages)
+* v0.0.2: Add Terraform version 0.11.10
 
 ### Install specific Toolbox version
 
 First of all you have to clone the repo with specific branch for set the toolbox version: 
 
 ```
-git clone -b v0.0.1 https://github.com/SolalVall/toolbox.git
+git clone -b v0.0.2 https://github.com/SolalVall/toolbox.git
 ```
 
 Finally just build the image
 ```
-docker build -t toolbox:0.0.1 .
+docker build -t toolbox:0.0.2 .
 ```
