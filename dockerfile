@@ -21,4 +21,9 @@ RUN apk add curl && \
 		unzip terraform_$TERRAFORM_VERSION.zip -d /usr/local/bin && \
 		rm terraform_$TERRAFORM_VERSION.zip
 
+#INSTALL AWS CLI
+RUN pip install awscli --upgrade --user
+#MODIFY PATH ENV FOR AWS BIN
+ENV PATH="/root/.local/bin:${PATH}"
+
 WORKDIR /toolbox
